@@ -21,7 +21,7 @@ function Board({ data }) {
         <Card value={4} label="Internados" color="#000" />
       </Grid>
       <Grid item xs={12} md={3}>
-        <Card value={14} label="Óbtios" color="#E95078" />
+        <Card value={14} label="Óbitos" color="#E95078" />
       </Grid>
       <Grid item xs={12} md={3}>
         <Card value={553} label="Recuperados" color="#67C887" />
