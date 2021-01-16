@@ -7,12 +7,14 @@ import {
   ValueStyled,
   CardContentStyled
 } from './style'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCheck } from '@fortawesome/free-solid-svg-icons';
 
 function Card({ value, label, color }) {
   return (
     <CardUI>
-      <CardContentStyled color={color}>
-        <ValueStyled>{value}</ValueStyled>
+      <CardContentStyled color={color}>       
+        <ValueStyled> <FontAwesomeIcon icon={faCheck}/> {value}</ValueStyled>
         <LabelStyled>{label}</LabelStyled>
       </CardContentStyled>
     </CardUI>

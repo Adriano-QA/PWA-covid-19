@@ -2,7 +2,17 @@
 import React, { memo } from 'react'
 import PropTypes from 'prop-types'
 import { Grid, Skeleton } from '../../../components'
+
+
 import Card from './Card'
+import CardMedical from './CardMedical'
+import CardProcedures from './CardProcedures'
+import CardDead from './CardDead'
+import CardHeart from './CardHeart'
+
+
+
+
 
 function Board({ data }) {
   const { cases, todayDeaths, recovered, deaths, todayCases } = data
@@ -12,19 +22,19 @@ function Board({ data }) {
   return (
     <Grid container spacing={4}>
       <Grid item xs={12} md={3}>
-        <Card value={661} label="Confirmados" color="#5d78ff" />
+      <Card value={661} label="Confirmados" color="#5d78ff" />
       </Grid>
       <Grid item xs={12} md={3}>
-        <Card value={90} label="Isolamento" color="#F7B829" />
+        <CardMedical value={90} label="Isolamento" color="#F7B829" />
       </Grid>
       <Grid item xs={12} md={3}>
-        <Card value={4} label="Internados" color="#000" />
+        <CardProcedures value={4} label="Internados" color="#000" />
       </Grid>
       <Grid item xs={12} md={3}>
-        <Card value={14} label="Óbitos" color="#E95078" />
+        <CardDead value={14} label="Óbitos" color="#E95078" />
       </Grid>
       <Grid item xs={12} md={3}>
-        <Card value={553} label="Recuperados" color="#67C887" />
+        <CardHeart value={553} label="Recuperados" color="#67C887" />
       </Grid>
     </Grid>
   )
