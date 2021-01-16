@@ -2,6 +2,8 @@
 
 PWA - Covid-19
 
+Acesse - https://pwacovid.netlify.app/
+
 ## Available Scripts
 
 In the project directory, you can run:
