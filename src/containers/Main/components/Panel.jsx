@@ -14,7 +14,7 @@ function Panel({ updateAt, onChange, data, country, getCoviddata }) {
     <MenuItem key={`country-${index}`} value={country.value}>
       <ItemStyled>
         <div>{country.label}</div>
-        <img src={country.flag} alt={`País-${country.label}`} />
+        <img src={country.flag} alt='' />
       </ItemStyled>
     </MenuItem>
   )
@@ -53,9 +53,9 @@ function Panel({ updateAt, onChange, data, country, getCoviddata }) {
     <Card>
       <CardPanelContentStyled>
         <div>
-          <Typography variant="h5" component="span" color="primary">COVID19</Typography>
-          <Typography variant="h6" component="span" color="primary">Painel Coronavírus</Typography>
-          <Typography variant="body2" component="span" color="primary">Atualizado em: {updateAt}</Typography>
+          <Typography variant="h5" component="span" color="primary">COVID19 </Typography>
+          <Typography variant="h6" component="span" color="primary">Painel Coronavírus </Typography>
+          <Typography variant="body2" component="span" color="primary"> Atualizado em: 15/01/2020</Typography>
           <div className="pt-2">
             <Select onChange={onChange} value={country}>
               {COUNTRIES.map(renderCountries)}

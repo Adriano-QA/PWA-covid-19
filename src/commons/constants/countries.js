@@ -1,35 +1,22 @@
-import BrazilFlag from '../../assets/images/brazil.png'
-import ChinaFlag from '../../assets/images/china.png'
-import GermanyFlag from '../../assets/images/germany.png'
-import ItalyFlag from '../../assets/images/italy.png'
-import UsaFlag from '../../assets/images/usa.png'
+import ItiFlag from '../../assets/images/itirapina.jpg'
+
 
 const COUNTRIES = [
   {
-    label: 'Alemanha',
-    value: 'germany',
-    flag: GermanyFlag
+    label: 'Itirapina',
+    value: 'itirapina',
+    flag: ItiFlag
   },
   {
-    label: 'Brasil',
-    value: 'brazil',
-    flag: BrazilFlag
+    label: 'Centro',
+    value: 'center',
   },
   {
-    label: 'China',
-    value: 'china',
-    flag: ChinaFlag
+    label: 'Vila Cianelli',
+    value: 'cianelli',
   },
-  {
-    label: 'Estados Unidos',
-    value: 'usa',
-    flag: UsaFlag
-  },
-  {
-    label: 'Itália',
-    value: 'italy',
-    flag: ItalyFlag
-  }
+
+ 
 ]
 
 export default COUNTRIES
