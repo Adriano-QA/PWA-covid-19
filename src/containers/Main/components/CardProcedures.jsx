@@ -16,6 +16,8 @@ function CardProcedures({ value, label, color }) {
       <CardContentStyled color={color}>       
         <ValueStyled> <FontAwesomeIcon icon={faProcedures}/> {value}</ValueStyled>
         <LabelStyled>{label}</LabelStyled>
+        <div style={{fontSize:'20px', fontWeight:'bold', marginTop:'5%'}}>Monitorados: 26</div>
+        <div style={{fontSize:'20px', fontWeight:'bold', marginTop:'5%'}}>Internados: 1</div>
       </CardContentStyled>
     </CardUI>
   )

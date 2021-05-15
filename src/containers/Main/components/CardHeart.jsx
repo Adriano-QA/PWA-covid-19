@@ -16,6 +16,8 @@ function CardHeart({ value, label, color }) {
       <CardContentStyled color={color}>       
         <ValueStyled> <FontAwesomeIcon icon={faHeartbeat}/> {value}</ValueStyled>
         <LabelStyled>{label}</LabelStyled>
+        <div style={{fontSize:'20px', fontWeight:'bold', marginTop:'5%'}}>Bairros: 888</div>
+        <div style={{fontSize:'20px', fontWeight:'bold', marginTop:'5%'}}>Penitenciárias: 405</div>
       </CardContentStyled>
     </CardUI>
   )

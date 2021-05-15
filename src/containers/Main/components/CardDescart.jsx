@@ -8,19 +8,19 @@ import {
   CardContentStyled
 } from './style'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faClinicMedical } from '@fortawesome/free-solid-svg-icons';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
-function CardMedical({ value, label, color }) {
+function Card({ value, label, color }) {
   return (
     <CardUI>
       <CardContentStyled color={color}>       
-        <ValueStyled> <FontAwesomeIcon icon={faClinicMedical}/> {value}</ValueStyled>
+        <ValueStyled> <FontAwesomeIcon icon={faTimes}/> {value}</ValueStyled>
         <LabelStyled>{label}</LabelStyled>
-        <div style={{fontSize:'20px', fontWeight:'bold', marginTop:'5%'}}>Bairros: 21</div>
-        <div style={{fontSize:'20px', fontWeight:'bold', marginTop:'5%'}}>Penitenciárias: 0</div>
+        <div style={{fontSize:'20px', fontWeight:'bold', marginTop:'5%'}}>Bairros: 1.614</div>
+        <div style={{fontSize:'20px', fontWeight:'bold', marginTop:'5%'}}>Penitenciaria: 2.985</div>
       </CardContentStyled>
     </CardUI>
   )
 }
 
-export default memo(CardMedical)
+export default memo(Card)

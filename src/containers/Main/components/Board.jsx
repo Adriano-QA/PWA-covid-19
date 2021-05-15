@@ -9,6 +9,8 @@ import CardMedical from './CardMedical'
 import CardProcedures from './CardProcedures'
 import CardDead from './CardDead'
 import CardHeart from './CardHeart'
+import CardDescart from './CardDescart'
+
 
 
 
@@ -21,20 +23,23 @@ function Board({ data }) {
 
   return (
     <Grid container spacing={4}>
-      <Grid item xs={12} md={3}>
-      <Card value={12} label="Confirmados" color="#5d78ff" />
+      <Grid item xs={12} md={4}>
+        <Card value={1.349} label="Confirmados" color="#5d78ff" />
       </Grid>
-      <Grid item xs={12} md={3}>
-        <CardMedical value={94} label="Isolamento" color="#F7B829" />
+      <Grid item xs={12} md={4}>
+        <CardDescart value={4.599} label="Descartados" color="#FF4F33" />
       </Grid>
-      <Grid item xs={12} md={3}>
-        <CardProcedures value={32} label="Internados" color="#000" />
+      <Grid item xs={12} md={4}>
+        <CardMedical value={21} label="Isolamento" color="#F7B829" />
       </Grid>
-      <Grid item xs={12} md={3}>
-        <CardDead value={13} label="Óbitos" color="#E95078" />
+      <Grid item xs={12} md={4}>
+        <CardProcedures value={27} label="Suspeitos" color="#E95078" />
+      </Grid>      
+      <Grid item xs={12} md={4}>
+        <CardHeart value={1.293} label="Recuperados" color="#67C887" />
       </Grid>
-      <Grid item xs={12} md={3}>
-        <CardHeart value={53} label="Recuperados" color="#67C887" />
+      <Grid item xs={12} md={4}>
+        <CardDead value={34} label="Óbitos" color="#000" />
       </Grid>
     </Grid>
   )

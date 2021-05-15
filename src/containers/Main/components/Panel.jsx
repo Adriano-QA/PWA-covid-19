@@ -53,9 +53,11 @@ function Panel({ updateAt, onChange, data, country, getCoviddata }) {
     <Card>
       <CardPanelContentStyled>
         <div>
-          <Typography variant="h5" component="span" color="primary">COVID19 </Typography>
-          <Typography variant="h6" component="span" color="primary">Painel Coronavírus </Typography>
-          <Typography variant="body2" component="span" color="primary"> Atualizado em: 15/01/2020</Typography>
+          <Typography variant="h5" component="span" color="primary">COVID 19 </Typography>
+          <Typography variant="h6" component="span" color="secondary">Itirapina-SP </Typography>
+          <Typography variant="body2" component="span" color="primary"> Atualizado em: 11/05/2021</Typography>
+          <Typography variant="body2" component="span" color="secondary"> Fonte: Prefeitura Municipal de Itirapina</Typography>
+
           <div className="pt-2">
             <Select onChange={onChange} value={country}>
               {COUNTRIES.map(renderCountries)}
