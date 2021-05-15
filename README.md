@@ -1,6 +1,6 @@
 # PWA COVID-19
 
-PWA - Covid-19
+Covid-19 - Itirapina
 
 Acesse - https://pwacovid.netlify.app/
 

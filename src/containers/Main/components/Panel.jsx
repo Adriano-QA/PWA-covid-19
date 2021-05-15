@@ -19,7 +19,7 @@ function Panel({ updateAt, onChange, data, country, getCoviddata }) {
     </MenuItem>
   )
 
-  const textCovid19 = `País: ${country} - recuperados: ${recovered}`
+  const textCovid19 = `Cidade: ${country}`
 
   const copyInfo = () => {
     navigator.clipboard.writeText(textCovid19)
@@ -27,7 +27,7 @@ function Panel({ updateAt, onChange, data, country, getCoviddata }) {
 
   const shareInfo = () => {
     navigator.share({
-      title: `Dados do Covid19 - ${country}`,
+      title: `Dados do Covid 19 - ${country}`,
       text: textCovid19,
       url: 'https://pwacovid.netlify.app/'
     })
