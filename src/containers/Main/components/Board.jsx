@@ -22,19 +22,19 @@ function Board({ data }) {
   return (
     <Grid container spacing={4}>
       <Grid item xs={12} md={3}>
-      <Card value={661} label="Confirmados" color="#5d78ff" />
+      <Card value={12} label="Confirmados" color="#5d78ff" />
       </Grid>
       <Grid item xs={12} md={3}>
-        <CardMedical value={90} label="Isolamento" color="#F7B829" />
+        <CardMedical value={94} label="Isolamento" color="#F7B829" />
       </Grid>
       <Grid item xs={12} md={3}>
-        <CardProcedures value={4} label="Internados" color="#000" />
+        <CardProcedures value={32} label="Internados" color="#000" />
       </Grid>
       <Grid item xs={12} md={3}>
-        <CardDead value={14} label="Óbitos" color="#E95078" />
+        <CardDead value={13} label="Óbitos" color="#E95078" />
       </Grid>
       <Grid item xs={12} md={3}>
-        <CardHeart value={553} label="Recuperados" color="#67C887" />
+        <CardHeart value={53} label="Recuperados" color="#67C887" />
       </Grid>
     </Grid>
   )
