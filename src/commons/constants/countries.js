@@ -7,11 +7,11 @@ const COUNTRIES = [
     value: 'itirapina',
     flag: ItiFlag
   },
-  /*{
+  {
     label: 'Centro',
     value: 'centro',
   },
-  {
+  /*{
     label: 'Vila Cianelli',
     value: 'cianelli',
   },

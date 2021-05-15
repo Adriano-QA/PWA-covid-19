@@ -3,6 +3,7 @@ import Api from '../../api'
 import Board from './components/Board'
 import Panel from './components/Panel'
 import { ContainerStyled } from './style'
+import BoardCentro from './components/BoardCentro'
 
 function Main() {
   const [data, setData] = useState({})
@@ -34,7 +35,9 @@ function Main() {
           getCovidData={getCovidData}
         />
       </div>
-      <Board data={data} />
+      {country === 'itirapina' ? <Board data={data} /> : ''  }
+      {country === 'centro' ? <BoardCentro data={data} /> : ''  }
+
       
     </ContainerStyled>
   )
